@@ -41,8 +41,19 @@ struct PlistGen: ParsableCommand {
         }
     }
 
+    func standardize(_ object: Any) -> Any {
+        if let dict = object as? [String: Any] {
+            let sortedDict = dict.sorted { $0.key < $1.key }
+            return Dictionary(uniqueKeysWithValues: sortedDict.map { ($0.key, standardize($0.value)) })
+        } else if let array = object as? [Any] {
+            return array.map { standardize($0) }
+        } else {
+            return object
+        }
+    }
+
     mutating func run() throws {
-        try PropertyListSerialization.data(fromPropertyList: try decodedFile.sorted { $0.key < $1.key }, format: format.format, options: 0).write(to: URL(fileURLWithPath: output))
+        try PropertyListSerialization.data(fromPropertyList: standardize(try decodedFile), format: format.format, options: 0).write(to: URL(fileURLWithPath: output))
     }
 
     func decodeJSON(_ encoded: String) throws -> [String: Any]? { try JSONSerialization.jsonObject(with: encoded.data(using: .utf8) ?? Data(), options: []) as? [String: Any] }

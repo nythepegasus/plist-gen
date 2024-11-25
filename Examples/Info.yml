@@ -1,0 +1,48 @@
+BuildMachineOSBuild: "24C5089c"
+CFBundleDevelopmentRegion: "en"
+CFBundleDisplayName: "XcodeTemplate"
+CFBundleExecutable: "XcodeTemplate"
+CFBundleIdentifier: "ny.XcodeTemplate.EU74F4WL9R"
+CFBundleInfoDictionaryVersion: "6.0"
+CFBundleName: "XcodeTemplate"
+CFBundlePackageType: "APPL"
+CFBundleShortVersionString: "1.0.0"
+CFBundleSupportedPlatforms:
+  - "iPhoneOS"
+CFBundleVersion: "1000"
+DEVTEAM: "EU74F4WL9R"
+DTCompiler: "com.apple.compilers.llvm.clang.1_0"
+DTPlatformBuild: "22A3362"
+DTPlatformName: "iphoneos"
+DTPlatformVersion: "18.0"
+DTSDKBuild: "22A3362"
+DTSDKName: "iphoneos18.0"
+DTXcode: "1600"
+DTXcodeBuild: "16A242d"
+LSApplicationCategoryType: "public.app-category.developer-tools"
+LSRequiresIPhoneOS: true
+LSSupportsOpeningDocumentsInPlace: true
+MinimumOSVersion: "15.0"
+NSStickerSharingLevel: "OS"
+UIApplicationSceneManifest:
+  UIApplicationSupportsMultipleScenes: true
+  UISceneConfigurations: {}
+UIApplicationSupportsIndirectInputEvents: true
+UIDeviceFamily:
+  - 1
+  - 2
+UILaunchScreen:
+  UILaunchScreen: {}
+UIRequiredDeviceCapabilities:
+  - "arm64"
+UISupportedInterfaceOrientations~ipad:
+  - "UIInterfaceOrientationPortrait"
+  - "UIInterfaceOrientationPortraitUpsideDown"
+  - "UIInterfaceOrientationLandscapeLeft"
+  - "UIInterfaceOrientationLandscapeRight"
+UISupportedInterfaceOrientations~iphone:
+  - "UIInterfaceOrientationPortrait"
+  - "UIInterfaceOrientationLandscapeLeft"
+  - "UIInterfaceOrientationLandscapeRight"
+UISupportsDocumentBrowser: true
+

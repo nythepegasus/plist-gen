@@ -7,10 +7,10 @@ USAGE: plist-gen <input> [<output>] [--format <format>]
 
 ARGUMENTS:
   <input>                 Input file to convert (JSON, YAML, or plist)
-  <output>                Output Info.plist file to generate (default: Info.plist)
+  <output>                Output plist file to generate (default: Info.plist)
 
 OPTIONS:
-  --format <format>       Output format of the Info.plist file: binary or xml (default: binary)
+  --format <format>       Output format of the plist file: binary or xml (default: binary)
   -h, --help              Show help information.
 ```
 
